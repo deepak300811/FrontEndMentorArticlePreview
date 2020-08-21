@@ -40,15 +40,17 @@
         </div>
         <div class="column">
           <div class="box-right">
-            <h2>
-              Shift the overall look and feel by adding these wonderful touches
-              to furniture in your home
-            </h2>
-            <p>
-              Ever been in a room and felt like something was missing? Perhaps
-              it felt slightly bare and uninviting. I’ve got some simple tips to
-              help you make any room feel complete.
-            </p>
+            <div class="content">
+              <h2>
+                Shift the overall look and feel by adding these wonderful
+                touches to furniture in your home
+              </h2>
+              <p>
+                Ever been in a room and felt like something was missing? Perhaps
+                it felt slightly bare and uninviting. I’ve got some simple tips
+                to help you make any room feel complete.
+              </p>
+            </div>
             <div id="social" class="social-items">
               <div class="column-social">
                 <div id="columnSocialLeft" class="left">
@@ -58,7 +60,7 @@
                     <p>28 Jun 2020</p>
                   </div>
                 </div>
-                <!-- <div id="mobileShare" class="left">
+                <div id="mobileShare" class="left">
                   <span id="desktop-share" class="tooltip">
                     <div class="column-tooltip">
                       <div class="share-col">
@@ -81,7 +83,7 @@
                       </div>
                     </div>
                   </span>
-                </div> -->
+                </div>
               </div>
 
               <div class="column-social">
@@ -124,7 +126,7 @@
     </main>
     <script>
       let elementId = document.getElementById("tooltip-Right")
-      let elementIdShareBar = document.getElementById("columnSocialLeft")
+      let elementIdShareBar = document.getElementById("social")
       let visibilityBool = false
       elementId.onclick = function () {
         if (!visibilityBool) {
