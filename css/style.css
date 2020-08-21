@@ -8,8 +8,11 @@ body {
   font-size: 13px;
   font-family: "Manrope", "sans-serif";
 }
-.backg {
+html {
   background-color: hsl(210, 46%, 95%);
+}
+.backg {
+  /* background-color: hsl(210, 46%, 95%); */
   height: 100vh;
   display: flex;
   /* flex-wrap: wrap; */
