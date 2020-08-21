@@ -119,7 +119,7 @@ body {
   color: hsl(214, 17%, 51%);
   border-radius: 50%;
   position: relative;
-  padding: 8px;
+  padding: 13px;
   border: none;
 }
 #social .column-social .right .tooltip {
