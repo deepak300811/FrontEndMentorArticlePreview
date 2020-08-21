@@ -32,7 +32,7 @@ html {
 #box-outer {
   /* padding: 30px; */
   /* max-width: 80%; */
-  max-width: 900px;
+  max-width: 785px;
   display: flex;
   border-radius: 10px;
   -webkit-box-shadow: 9px 16px 43px -25px rgba(0, 0, 0, 0.75);
