@@ -180,7 +180,7 @@ body {
 
 @media (max-width: 768px) {
   #box-outer {
-    max-width: 60%;
+    max-width: 70%;
     flex: 100%;
     flex-wrap: wrap;
     border-radius: 10px;
