@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="https://fonts.google.com/specimen/Manrope" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Article preview component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <main class="backg">
+      <section id="box-outer" class="box-outer">
+        <div class="column">
+          <div class="box-left">
+            <img src="./images/drawers.jpg" alt="" />
+          </div>
+        </div>
+        <div class="column">
+          <div class="box-right">
+            <h2>
+              Shift the overall look and feel by adding these wonderful touches
+              to furniture in your home
+            </h2>
+            <p>
+              Ever been in a room and felt like something was missing? Perhaps
+              it felt slightly bare and uninviting. I’ve got some simple tips to
+              help you make any room feel complete.
+            </p>
+            <div id="social" class="social-items">
+              <div class="column-social">
+                <div id="columnSocialLeft" class="left">
+                  <img src="/images/avatar-michelle.jpg" alt="" />
+                  <div class="middle">
+                    <p><strong> Michelle Appleton</strong></p>
+                    <p>28 Jun 2020</p>
+                  </div>
+                </div>
+                <!-- <div id="mobileShare" class="left">
+                  <span id="desktop-share" class="tooltip">
+                    <div class="column-tooltip">
+                      <div class="share-col">
+                        <p>S H A R E</p>
+                      </div>
+                    </div>
+                    <div class="column-tooltip">
+                      <div class="social-col">
+                        <p>
+                          <a href="" class="share-item"
+                            ><i class="fab fa-facebook-square fa-2x"></i
+                          ></a>
+                          <a href="" class="share-item">
+                            <i class="fab fa-twitter fa-2x"></i>
+                          </a>
+                          <a href="" class="share-item">
+                            <i class="fab fa-pinterest fa-2x"></i>
+                          </a>
+                        </p>
+                      </div>
+                    </div>
+                  </span>
+                </div> -->
+              </div>
+
+              <div class="column-social">
+                <div id="tooltip-Right" class="right">
+                  <i class="fas fa-share"></i>
+                  <span id="desktop-share" class="tooltip">
+                    <div class="column-tooltip">
+                      <div class="share-col">
+                        <p>S H A R E</p>
+                      </div>
+                    </div>
+                    <div class="column-tooltip">
+                      <div class="social-col">
+                        <p>
+                          <a href="" class="share-item"
+                            ><i class="fab fa-facebook-square fa-2x"></i
+                          ></a>
+                          <a href="" class="share-item">
+                            <i class="fab fa-twitter fa-2x"></i>
+                          </a>
+                          <a href="" class="share-item">
+                            <i class="fab fa-pinterest fa-2x"></i>
+                          </a>
+                        </p>
+                      </div>
+                    </div>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">DEEPAK</a>.
+      </div>
+    </main>
+    <script>
+      let elementId = document.getElementById("tooltip-Right")
+      let elementIdShareBar = document.getElementById("columnSocialLeft")
+      let visibilityBool = false
+      elementId.onclick = function () {
+        if (!visibilityBool) {
+          elementId.classList.add("visible-tooltip")
+          elementIdShareBar.classList.add("visible-tooltip")
+          visibilityBool = true
+        } else {
+          elementId.classList.remove("visible-tooltip")
+          elementIdShareBar.classList.remove("visible-tooltip")
+          visibilityBool = false
+        }
+      }
+    </script>
+  </body>
+</html>

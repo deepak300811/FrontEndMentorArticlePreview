@@ -1,0 +1,196 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-size: 13px;
+  font-family: "Manrope", "sans-serif";
+}
+.backg {
+  background-color: hsl(210, 46%, 95%);
+  height: 100vh;
+  display: flex;
+  /* flex-wrap: wrap; */
+  align-items: center;
+  justify-content: center;
+}
+.attribution {
+  position: fixed;
+  bottom: 0px;
+  justify-self: center;
+  align-self: flex-end;
+  flex-basis: 100%;
+  max-width: 100%;
+  font-size: 1rem;
+}
+
+#box-outer {
+  /* padding: 30px; */
+  max-width: 80%;
+  display: flex;
+  -webkit-box-shadow: 9px 16px 43px -25px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 9px 16px 43px -25px rgba(0, 0, 0, 0.75);
+  box-shadow: 9px 16px 43px -25px rgba(0, 0, 0, 0.75);
+}
+#box-outer .column {
+  display: flex;
+  flex-direction: column;
+  background: transparent;
+  /* flex-basis: 100%; */
+  /* flex: 1; */
+}
+#box-outer .column .box-left,
+#box-outer .column .box-right {
+  height: 100%;
+}
+
+#box-outer .col-left {
+  border-radius: 10px 0 0 10px;
+}
+#box-outer .col-right {
+  border-radius: 0 10px 10px 0;
+}
+
+.box-left img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px 0 0 10px;
+}
+
+.box-right {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border-radius: 0 10px 10px 0;
+}
+.box-right h2 {
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: hsl(217, 19%, 35%);
+}
+.box-right p {
+  font-weight: 100;
+  margin-bottom: 15px;
+  color: hsl(214, 17%, 51%);
+}
+#box-outer .column .box-right .social-items {
+  margin-top: 20px;
+  justify-self: flex-end;
+}
+#social {
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+  align-items: center;
+  position: sticky;
+  bottom: 0;
+}
+#social .column-social .left,
+#social .column-social .middle,
+#social .column-social .right {
+  height: 100%;
+}
+#social .column-social .left {
+  width: 100%;
+}
+#social .column-social .left img {
+  width: 20%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+#social .column-social .middle p {
+  margin: 0;
+}
+
+#social .column-social .left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+#social .column-social .left .middle {
+  width: 80%;
+  padding-left: 10px;
+}
+#social .column-social .right {
+  background: hsl(210, 46%, 95%);
+  color: hsl(214, 17%, 51%);
+  border-radius: 50%;
+  position: relative;
+  padding: 8px;
+  border: none;
+}
+#social .column-social .right .tooltip {
+  height: 60px;
+  width: 240px;
+  border-radius: 10px;
+  position: absolute;
+  display: flex;
+  flex: 1;
+  justify-content: space-evenly;
+  align-items: center;
+  top: -80px;
+  right: -80px;
+  border: 1px black solid;
+  visibility: hidden;
+  background: hsl(217, 19%, 35%);
+  border: none;
+  z-index: 2;
+}
+
+/* #social .column-social .right:hover {
+  background: hsl(214, 17%, 51%);
+  color: #fff;
+} */
+#social .column-social .right.visible-tooltip .tooltip {
+  visibility: visible;
+}
+#social .column-social .right.visible-tooltip {
+  background: hsl(214, 17%, 51%);
+  color: #fff;
+}
+.column-tooltip {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.column-tooltip p {
+  margin: 0;
+}
+.column-tooltip p a {
+  text-decoration: none;
+  display: inline-block;
+  margin-right: 10px;
+  color: #fff;
+  padding: 1px;
+}
+.share-col p {
+  color: hsl(215, 27%, 62%);
+  padding: 10px;
+}
+
+@media (max-width: 768px) {
+  #box-outer {
+    flex: 100%;
+    flex-wrap: wrap;
+  }
+  .box-left img {
+    border-radius: 10px 10px 0 0;
+  }
+  .box-right {
+    border-radius: 0;
+  }
+  #social .column-social .left.visible-tooltip {
+    display: none;
+  }
+  #social {
+    position: sticky;
+    bottom: 0;
+  }
+}
